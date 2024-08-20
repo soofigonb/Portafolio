@@ -1,0 +1,2439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.back-arrow {
+    width: 20px;
+    height: 20px;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: -40px;
+}
+#proyectos {
+    margin-top: -90px;
+}
+.ag-format-container {
+    
+    margin: 0 auto;
+    
+}
+.ag-courses_box {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.ag-courses_item {
+    flex-basis: calc(33.33333% - 30px);
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.ag-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+    text-decoration: none;
+    color: #333;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+    transform: scale(10);
+}
+
+.ag-courses-item_link:focus,
+.ag-courses-item_link:active {
+    outline: none;
+}
+
+.ag-courses-item_title {
+    min-height: 87px;
+    margin: 0 0 25px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 30px;
+    color: #333;
+    z-index: 2;
+    position: relative;
+}
+
+.ag-courses-item_date-box {
+    font-size: 18px;
+    color: #333;
+    z-index: 2;
+    position: relative;
+}
+
+.ag-courses-item_date {
+    font-weight: bold;
+    color: grey;
+    transition: color .5s ease;
+}
+
+.ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background: linear-gradient(90deg, hsla(311, 74%, 87%, 1) 0%, hsla(275, 19%, 88%, 1) 100%);
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+    background: linear-gradient(90deg, hsla(138, 82%, 69%, 1) 0%, hsla(186, 100%, 50%, 1) 100%);
+}
+
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+    background: linear-gradient(90deg, hsla(263, 42%, 65%, 1) 0%, hsla(319, 77%, 86%, 1) 100%);
+}
+
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+    background: linear-gradient(90deg, hsla(139, 70%, 75%, 1) 0%, hsla(63, 90%, 76%, 1) 100%);
+}
+.ver-mas-btn {
+    background-color:transparent;
+    font-weight: bold;
+    color: black;
+    border: transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.ver-mas-btn:hover {
+    background-color: transparent;
+    transform: scale(1.05);
+}
+#proyectos:target {
+    display: block;
+}
+.pro{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px; 
+    letter-spacing: 7px;    
+    font-style: normal;
+    text-align: center;
+    margin-bottom: -30px;
+    margin-top: 20px;
+}
+
+/* CSS en skyp*/
+#skyp-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    height: 480px;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 100px;
+    margin-top: 90px;
+}
+#skyp-card .img-fluid {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+#skyp-card img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+}
+
+#skyp-card img.enlarged {
+    transform: scale(1.8); 
+}
+#skyp-card .card-body h5,
+#skyp-card .card-body p,
+#skyp-card .card-body ol,
+#skyp-card .card-body ul {
+    margin-left: 0;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+
+/* CSS en Aerovia*/
+#aero-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px; 
+    width: 1300px; 
+    height: 500px;
+    max-width: 1500px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 140px;
+    margin-bottom: 30px; 
+}
+
+#aero-card .aero-card-body {
+    margin-left: 0; 
+    padding: 0 20px; 
+}
+
+#aero-card .aero-card-title {
+    font-size: 24px; 
+    color: #333;
+    margin-bottom: 20px; 
+    padding: 0;
+}
+
+#aero-card .aero-card-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+#aero-card .aero-card-img-top {
+    width: 50%; 
+    height: auto; 
+    border: 2px solid gray; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: block;
+    margin: 20px auto 0 auto;
+    transition: transform 0.3s ease;
+}
+
+#aero-card .aero-card-img-top.enlarged {
+    transform: scale(1.5); 
+    z-index: 2;
+    position: relative; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+
+
+/*CSS en Mentel*/
+#mentel-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    height: 520px;
+    transition: transform 0.3s ease;
+    width: 90%;
+    max-width: 1200px;
+    margin-left: 150px;
+    margin-top: 280px;
+}
+
+#mentel-card .img-fluid {
+    width: 85%; 
+    height: auto;
+    margin-left: 50px;
+    margin-top: 20px;
+    
+}
+
+#mentel-card img {
+    border: 2px solid gray;
+    border-radius: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 100%; 
+   
+}
+
+#mentel-card .mentel-card-body h5 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    padding: 0;
+    margin-left: 90px;
+}
+
+#mentel-card .mentel-card-body p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    padding: 0;
+    margin-left: 90px; 
+}
+
+#mentel img {
+    transition: transform 0.3s ease;
+    position: relative;
+    display: block;
+    margin: 25px auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#mentel img.enlarged {
+    transform: scale(1.4);
+    z-index: 10;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/*CSS en Banca en Linea*/
+.banca-card {
+    position: relative;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+}
+
+#banca-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    height: 520px;
+    transition: transform 0.3s ease;
+    width: 95%;
+    max-width: 1800px;
+    margin-left: 35px;
+    margin-top: -50px;
+}
+#banca-card .banca-card-img-top{
+    width: 30%; 
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+    
+}
+#banca-card .banca-card-img-top.enlarged {
+    transform: scale(1.4);
+}
+#banca-card .banca-card-body h5 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    padding: 0;
+    margin-left: 25px;
+}
+#banca-card .banca-card-body p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    padding: 0;
+    margin-left: 25px; 
+}
+
+
+
+
+@media (min-width:1300px) and (max-width:1500.9px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1.4rem;
+        margin-top: 20px;
+        margin-bottom: -50px;
+    }
+    .ag-courses_item{
+        width: 250px;
+        height: 180px;
+        margin-top: 20px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 5px;
+        gap: 10px;
+    }
+    .ag-courses-item_title{
+        margin-top: 10px;
+        font-size: 1.2rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.9rem;
+
+    }
+    .ver-mas-btn{
+        font-size: 1rem;
+        margin-left: 50px;
+     
+    }
+    #skyp-card {
+        margin-left: 80px;
+    }
+    #aero-card{
+        margin-top: 150px;
+        margin-left: 30px;
+    }
+    #mentel-card{
+        margin-top: 280px;
+        margin-left: 80px;
+    }
+    #banca-card{
+        margin-top: -30px;
+        margin-left: 30px;
+        height: 500px;
+        
+    }
+    #banca-card .banca-card-img-top{
+        width: 25%;
+        height: auto;
+        margin-left: 80px;
+        margin-right: -10px;
+        margin-bottom: 30px;
+         
+        
+    }
+    #banca-card .banca-card-body h5{
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+        
+    }
+    #banca-card .banca-card-body p{
+        font-size: 1rem;
+    }
+
+
+}
+@media (min-width:1200px) and (max-width:1300.9px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1.4rem;
+        margin-top: 20px;
+        margin-bottom: -50px;
+    }
+    .ag-courses_item{
+        width: 250px;
+        height: 180px;
+        margin-top: 20px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 5px;
+        gap: 10px;
+    }
+    .ag-courses-item_title{
+        margin-top: 10px;
+        font-size: 1.2rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.9rem;
+
+    }
+    .ver-mas-btn{
+        font-size: 1rem;
+        margin-left: 50px;
+     
+    }
+    #skyp-card {
+        margin-left: 30px;
+       
+    }
+    #aero-card{
+        margin-top: 150px;
+        margin-left: 30px;
+    }
+    #mentel-card{
+        margin-top: 280px;
+        margin-left: 80px;
+    }
+    #banca-card{
+        margin-top: -50px;
+        margin-left: 30px;
+        
+    }
+    #banca-card .banca-card-img-top{
+        width: 25%;
+        height: auto;
+        margin-left: 80px;
+        margin-right: -10px;
+        margin-bottom: 30px;
+         
+        
+    }
+    #banca-card .banca-card-body h5{
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+        
+    }
+    #banca-card .banca-card-body p{
+        font-size: 1rem;
+    }
+
+
+}
+@media (min-width:1024px) and (max-width:1200.9px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1.4rem;
+        margin-top: 20px;
+        margin-bottom: -50px;
+    }
+    .ag-courses_item{
+        width: 250px;
+        height: 180px;
+        margin-top: 20px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 5px;
+        gap: 10px;
+    }
+    .ag-courses-item_title{
+        margin-top: 10px;
+        font-size: 1.2rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.9rem;
+
+    }
+    .ver-mas-btn{
+        font-size: 1rem;
+        margin-left: 50px;
+     
+    }
+    /* SKYP */
+    #skyp-card {
+        width: 950px;
+        height: 460px;
+        margin-left: -10px;
+        margin-top: 50px;
+        overflow:scroll;
+    }
+    #skyp-card h5{
+        font-size: 1.4rem;
+        
+    }
+    #skyp-card p{
+        font-size: 1rem;
+        margin-top: -10px;
+    }
+    #skyp-card ol li ul li{
+        font-size: 1rem;
+        margin-left: -10px;
+    }
+    
+    #skyp-card img.enlarged {
+        transform: scale(1.2); 
+    }
+
+    /*  AERO */
+
+    #aero-card{
+        margin-top: 130px;
+        margin-left: -10px;
+        width: 950px;
+        height: 460px;
+        overflow:scroll;
+    }
+    #aero-card .aero-card-img-top{
+        width: 100%;
+        height: auto;
+    }
+    #aero-card .aero-card-img-top.enlarged {
+        transform: scale(1.2); 
+        z-index: 2;
+        position: relative; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* MENTEL */
+    #mentel-card{
+        margin-top: 280px;
+        margin-left: -10px;
+        width: 950px;
+        height: 460px;
+        overflow:scroll;
+        
+    }
+    #mentel-card .img-fluid{
+        display: flex;
+        flex-direction: column; 
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 40px;
+        
+        
+    }
+    #mentel-card .mentel-card-body h5{
+        font-size: 1.3rem;
+        margin-left: 40px;
+        margin-top: 30px;
+        
+        
+    }
+    #mentel-card .mentel-card-body p {
+        font-size: 1rem;
+        margin-left: 40px;
+    }
+
+    /* BANCA */
+
+    #banca-card{
+        margin-top: -50px;
+        margin-left: -10px;
+        width: 950px;
+        height: 460px;
+        overflow: scroll;
+        
+    }
+    #banca-card .banca-card-img-top{
+        width: 90%;
+        height: auto;
+        gap: 5px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+            
+        
+    }
+    #banca-card .banca-card-body h5{
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+        
+    }
+    #banca-card .banca-card-body p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+   
+
+}
+@media (min-width:991px) and (max-width:1024.9px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1.3rem;
+        margin-top: 5px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px;
+    }
+    .ag-courses_item{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        width: 370px;
+        height: 180px; 
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        
+    }
+    .ag-courses_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px;
+        
+        
+    }
+    .ag-courses-item_title{
+        margin-top: 15px;
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.7rem;
+       
+        
+        
+    }
+    .ver-mas-btn{
+        font-size: 0.79rem;
+        margin-top: -90px;
+        margin-right:-10px;
+        
+
+    }
+    .btn-close{
+        width: 5px;
+        margin-top: 5px;
+    }
+        /* SKYP */
+    #skyp-card {
+        width: 950px;
+        height: 460px;
+        margin-left: -10px;
+        margin-top: 50px;
+        overflow:scroll;
+    }
+    #skyp-card h5{
+        font-size: 1.4rem;
+        
+    }
+    #skyp-card p{
+        font-size: 1rem;
+        margin-top: -10px;
+    }
+    #skyp-card ol li ul li{
+        font-size: 1rem;
+        margin-left: -10px;
+    }
+    
+    #skyp-card img.enlarged {
+        transform: scale(1.2); 
+    }
+
+    /*  AERO */
+
+    #aero-card{
+        margin-top: 130px;
+        margin-left: -10px;
+        width: 950px;
+        height: 460px;
+        overflow:scroll;
+    }
+    #aero-card .aero-card-img-top{
+        width: 100%;
+        height: auto;
+    }
+    #aero-card .aero-card-img-top.enlarged {
+        transform: scale(1.2); 
+        z-index: 2;
+        position: relative; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* MENTEL */
+    #mentel-card{
+        margin-top: 280px;
+        margin-left: -10px;
+        width: 950px;
+        height: 460px;
+        overflow:scroll;
+        
+    }
+    #mentel-card .img-fluid{
+        display: flex;
+        flex-direction: column; 
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 40px;
+        
+        
+    }
+    #mentel-card .mentel-card-body h5{
+        font-size: 1.3rem;
+        margin-left: 40px;
+        margin-top: 30px;
+        
+        
+    }
+    #mentel-card .mentel-card-body p {
+        font-size: 1rem;
+        margin-left: 40px;
+    }
+
+    /* BANCA */
+
+    #banca-card{
+        margin-top: -50px;
+        margin-left: -10px;
+        width: 950px;
+        height: 460px;
+        overflow: scroll;
+        
+    }
+    #banca-card .banca-card-img-top{
+        width: 90%;
+        height: auto;
+        gap: 5px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+            
+        
+    }
+    #banca-card .banca-card-body h5{
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+        
+    }
+    #banca-card .banca-card-body p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+}
+@media (min-width:899px) and (max-width:991.9px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px;
+    }
+    .ag-courses_item{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        width: 330px;
+        height: 180px; 
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        
+    }
+    .ag-courses_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px;
+        
+        
+    }
+    .ag-courses-item_title{
+        margin-top: 15px;
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.7rem;
+       
+        
+        
+    }
+    .ver-mas-btn{
+        font-size: 0.79rem;
+        margin-top: -90px;
+        margin-left:90px;
+        
+
+    }
+    .btn-close{
+        width: 5px;
+        margin-top: 5px;
+    }
+        /* SKYP */
+    #skyp-card {
+        width: 850px;
+        height: 460px;
+        margin-left: -10px;
+        margin-top: 50px;
+        overflow:scroll;
+    }
+    #skyp-card h5{
+        font-size: 1.2rem;
+        
+    }
+    #skyp-card p{
+        font-size: 0.75rem;
+        margin-top: -10px;
+    }
+    #skyp-card ol li ul li{
+        font-size: 0.75rem;
+        margin-left: -10px;
+    }
+    #skyp-card img.enlarged {
+        transform: scale(1.2); 
+    }
+
+    /*  AERO */
+
+    #aero-card{
+        margin-top: 130px;
+        margin-left: -10px;
+        width: 850px;
+        height: 460px;
+        overflow:scroll;
+    }
+    #aero-card .aero-card-img-top{
+        width: 100%;
+        height: auto;
+    }
+    #aero-card .aero-card-img-top.enlarged {
+        transform: scale(1.2); 
+        z-index: 2;
+        position: relative; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* MENTEL */
+    #mentel-card{
+        margin-top: 280px;
+        margin-left: -10px;
+        width: 850px;
+        height: 460px;
+        overflow:scroll;
+        
+    }
+    #mentel-card .img-fluid{
+        display: flex;
+        flex-direction: column; 
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 40px;
+        
+        
+    }
+    #mentel-card .mentel-card-body h5{
+        font-size: 1.3rem;
+        margin-left: 40px;
+        margin-top: 30px;
+        
+        
+    }
+    #mentel-card .mentel-card-body p {
+        font-size: 1rem;
+        margin-left: 40px;
+    }
+
+    /* BANCA */
+
+    #banca-card{
+        margin-top: -50px;
+        margin-left: -10px;
+        width: 850px;
+        height: 460px;
+        overflow: scroll;
+        
+    }
+    #banca-card .banca-card-img-top{
+        width: 90%;
+        height: auto;
+        gap: 5px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+            
+        
+    }
+    #banca-card .banca-card-body h5{
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+        
+    }
+    #banca-card .banca-card-body p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+
+}
+@media (min-width:800px) and (max-width:899.9px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px;
+    }
+    .ag-courses_item{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        width: 310px;
+        height: 180px; 
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        
+    }
+    .ag-courses_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+        
+        
+    }
+    .ag-courses-item_title{
+        margin-top: 15px;
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.7rem;
+       
+        
+        
+    }
+    .ver-mas-btn{
+        font-size: 0.79rem;
+        margin-top: -90px;
+        margin-left:90px;
+        
+
+    }
+    .btn-close{
+        width: 5px;
+        margin-top: 5px;
+    }
+        /* SKYP */
+    #skyp-card {
+        width: 750px;
+        height: 460px;
+        margin-left: -5px;
+        margin-top: 50px;
+        overflow:scroll;
+    }
+    #skyp-card h5{
+        font-size: 1.2rem;
+        
+    }
+    #skyp-card p{
+        font-size: 0.75rem;
+        margin-top: -10px;
+    }
+    #skyp-card ol li ul li{
+        font-size: 0.75rem;
+        margin-left: -10px;
+    }
+    #skyp-card img.enlarged {
+        transform: scale(1.2); 
+    }
+
+    /*  AERO */
+
+    #aero-card{
+        margin-top: 130px;
+        margin-left: -10px;
+        width: 750px;
+        height: 460px;
+        overflow:scroll;
+    }
+    #aero-card .aero-card-img-top{
+        width: 100%;
+        height: auto;
+    }
+    #aero-card .aero-card-img-top.enlarged {
+        transform: scale(1.2); 
+        z-index: 2;
+        position: relative; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* MENTEL */
+    #mentel-card{
+        margin-top: 280px;
+        margin-left: -10px;
+        width: 750px;
+        height: 460px;
+        overflow:scroll;
+        
+    }
+    #mentel-card .img-fluid{
+        display: flex;
+        flex-direction: column; 
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 40px;
+        
+        
+    }
+    #mentel-card .mentel-card-body h5{
+        font-size: 1.3rem;
+        margin-left: 40px;
+        margin-top: 30px;
+        
+        
+    }
+    #mentel-card .mentel-card-body p {
+        font-size: 1rem;
+        margin-left: 40px;
+    }
+
+    /* BANCA */
+
+    #banca-card{
+        margin-top: -50px;
+        margin-left: -10px;
+        width: 750px;
+        height: 460px;
+        overflow: scroll;
+        
+    }
+    #banca-card .banca-card-img-top{
+        width: 90%;
+        height: auto;
+        gap: 5px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+            
+        
+    }
+    #banca-card .banca-card-body h5{
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+        
+    }
+    #banca-card .banca-card-body p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+
+ 
+}
+@media (min-width:700px) and (max-width:800.9px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px;
+    }
+    .ag-courses_item{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        width: 290px;
+        height: 180px; 
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        
+    }
+    .ag-courses_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+        
+        
+    }
+    .ag-courses-item_title{
+        margin-top: 15px;
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.7rem;
+       
+        
+        
+    }
+    .ver-mas-btn{
+        font-size: 0.79rem;
+        margin-top: -90px;
+        margin-left:90px;
+        
+
+    }
+    .btn-close{
+        width: 5px;
+        margin-top: 5px;
+    }
+        /* SKYP */
+    #skyp-card {
+        width: 650px;
+        height: 460px;
+        margin-left: -15px;
+        margin-top: 50px;
+        overflow:scroll;
+    }
+    #skyp-card h5{
+        font-size: 1.2rem;
+        
+    }
+    #skyp-card p{
+        font-size: 0.75rem;
+        margin-top: -10px;
+    }
+    #skyp-card ol li ul li{
+        font-size: 0.75rem;
+        margin-left: -10px;
+    }
+    #skyp-card img.enlarged {
+        transform: scale(1.2); 
+    }
+
+    /*  AERO */
+
+    #aero-card{
+        margin-top: 130px;
+        margin-left: -10px;
+        width: 650px;
+        height: 460px;
+        overflow:scroll;
+    }
+    #aero-card .aero-card-img-top{
+        width: 100%;
+        height: auto;
+    }
+    #aero-card .aero-card-img-top.enlarged {
+        transform: scale(1.2); 
+        z-index: 2;
+        position: relative; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* MENTEL */
+    #mentel-card{
+        margin-top: 280px;
+        margin-left: -10px;
+        width: 650px;
+        height: 460px;
+        overflow:scroll;
+        
+    }
+    #mentel-card .img-fluid{
+        display: flex;
+        flex-direction: column; 
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 20px;
+        
+        
+    }
+    #mentel-card .mentel-card-body h5{
+        font-size: 1.3rem;
+        margin-left: 20px;
+        margin-top: -5px;
+        
+        
+    }
+    #mentel-card .mentel-card-body p {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    /* BANCA */
+
+    #banca-card{
+        margin-top: -50px;
+        margin-left: -10px;
+        width: 650px;
+        height: 460px;
+        overflow: scroll;
+        
+    }
+    #banca-card .banca-card-img-top{
+        width: 90%;
+        height: auto;
+        gap: 5px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+            
+        
+    }
+    #banca-card .banca-card-body h5{
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+        
+    }
+    #banca-card .banca-card-body p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+ 
+}
+@media(min-width:644px) and (max-width:700.9px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px;
+    }
+    .ag-courses_item{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+        width: 250px;
+        height: 190px; 
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        
+    }
+    .ag-courses_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+        
+        
+    }
+    .ag-courses-item_title{
+        margin-top: 15px;
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.7rem;
+       
+        
+        
+    }
+    .ver-mas-btn{
+        font-size: 0.8rem;
+        margin-top: -90px;
+        margin-left:90px;
+        
+
+    }
+    .btn-close{
+        width: 5px;
+        margin-top: 5px;
+    }
+        /* SKYP */
+    #skyp-card {
+        width: 600px;
+        height: 460px;
+        margin-left: -15px;
+        margin-top: 50px;
+        overflow:scroll;
+    }
+    #skyp-card h5{
+        font-size: 1.2rem;
+        
+    }
+    #skyp-card p{
+        font-size: 0.75rem;
+        margin-top: -10px;
+    }
+    #skyp-card ol li ul li{
+        font-size: 0.75rem;
+        margin-left: -10px;
+    }
+    #skyp-card img.enlarged {
+        transform: scale(1.2); 
+    }
+
+    /*  AERO */
+
+    #aero-card{
+        margin-top: 130px;
+        margin-left: -10px;
+        width: 600px;
+        height: 460px;
+        overflow:scroll;
+    }
+    #aero-card .aero-card-img-top{
+        width: 100%;
+        height: auto;
+    }
+    #aero-card .aero-card-img-top.enlarged {
+        transform: scale(1.2); 
+        z-index: 2;
+        position: relative; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* MENTEL */
+    #mentel-card{
+        margin-top: 280px;
+        margin-left: -10px;
+        width: 600px;
+        height: 460px;
+        overflow:scroll;
+        
+    }
+    #mentel-card .img-fluid{
+        display: flex;
+        flex-direction: column; 
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 20px;
+        
+        
+    }
+    #mentel-card .mentel-card-body h5{
+        font-size: 1.3rem;
+        margin-left: 20px;
+        margin-top: -5px;
+        
+        
+    }
+    #mentel-card .mentel-card-body p {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    /* BANCA */
+
+    #banca-card{
+        margin-top: -50px;
+        margin-left: -10px;
+        width: 600px;
+        height: 460px;
+        overflow: scroll;
+        
+    }
+    #banca-card .banca-card-img-top{
+        width: 90%;
+        height: auto;
+        gap: 5px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+            
+        
+    }
+    #banca-card .banca-card-body h5{
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+        
+    }
+    #banca-card .banca-card-body p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+
+ 
+}
+@media(min-width:600px) and (max-width:644.9px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px;
+    }
+    .ag-courses_item{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        width: 250px;
+        height: 190px; 
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        
+    }
+    .ag-courses_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+        
+        
+    }
+    .ag-courses-item_title{
+        margin-top: 15px;
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.7rem;
+       
+        
+        
+    }
+    .ver-mas-btn{
+        font-size: 0.8rem;
+        margin-top: -90px;
+        margin-left:90px;
+        
+
+    }
+    .btn-close{
+        width: 5px;
+        margin-top: 5px;
+    }
+        /* SKYP */
+    #skyp-card {
+        width: 570px;
+        height: 460px;
+        margin-left: -15px;
+        margin-top: 50px;
+        overflow:scroll;
+    }
+    #skyp-card h5{
+        font-size: 1.2rem;
+        
+    }
+    #skyp-card p{
+        font-size: 0.75rem;
+        margin-top: -10px;
+    }
+    #skyp-card ol li ul li{
+        font-size: 0.75rem;
+        margin-left: -10px;
+    }
+    #skyp-card img.enlarged {
+        transform: scale(1.2); 
+    }
+
+    /*  AERO */
+
+    #aero-card{
+        margin-top: 130px;
+        margin-left: -10px;
+        width: 570px;
+        height: 460px;
+        overflow:scroll;
+    }
+    #aero-card .aero-card-img-top{
+        width: 100%;
+        height: auto;
+    }
+    #aero-card .aero-card-img-top.enlarged {
+        transform: scale(1.2); 
+        z-index: 2;
+        position: relative; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* MENTEL */
+    #mentel-card{
+        margin-top: 280px;
+        margin-left: -10px;
+        width: 570px;
+        height: 460px;
+        overflow:scroll;
+        
+    }
+    #mentel-card .img-fluid{
+        display: flex;
+        flex-direction: column; 
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 20px;
+        
+        
+    }
+    #mentel-card .mentel-card-body h5{
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-top: -5px;
+        
+        
+    }
+    #mentel-card .mentel-card-body p {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    /* BANCA */
+
+    #banca-card{
+        margin-top: -50px;
+        margin-left: -10px;
+        width: 570px;
+        height: 460px;
+        overflow: scroll;
+        
+    }
+    #banca-card .banca-card-img-top{
+        width: 90%;
+        height: auto;
+        gap: 5px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+            
+        
+    }
+    #banca-card .banca-card-body h5{
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+        
+    }
+    #banca-card .banca-card-body p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+ 
+}
+@media (min-width:520px) and (max-width:600.9px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px;
+    }
+    .ag-courses_item{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+        width: 230px;
+        height: 190px; 
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        
+    }
+    .ag-courses_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 5px;
+        
+        
+    }
+    .ag-courses-item_title{
+        margin-top: 15px;
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.7rem;
+       
+        
+        
+    }
+    .ver-mas-btn{
+        font-size: 0.8rem;
+        margin-top: -90px;
+        margin-left:90px;
+        
+
+    }
+    .btn-close{
+        width: 5px;
+        margin-top: 5px;
+    }
+         /* SKYP */
+         #skyp-card {
+            width: 490px;
+            height: 480px;
+            margin-left: -15px;
+            margin-top: 40px;
+            overflow:scroll;
+        }
+        #skyp-card h5{
+            font-size: 1.2rem;
+            
+        }
+        #skyp-card p{
+            font-size: 0.75rem;
+            margin-top: -10px;
+        }
+        #skyp-card ol li ul li{
+            font-size: 0.75rem;
+            margin-left: -10px;
+        }
+        #skyp-card img.enlarged {
+            transform: scale(1.2); 
+        }
+    
+        /*  AERO */
+    
+        #aero-card{
+            margin-top: 130px;
+            margin-left: -10px;
+            width: 490px;
+            height: 480px;
+            overflow:scroll;
+        }
+        #aero-card .aero-card-img-top{
+            width: 100%;
+            height: auto;
+        }
+        #aero-card .aero-card-img-top.enlarged {
+            transform: scale(1.2); 
+            z-index: 2;
+            position: relative; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    
+        /* MENTEL */
+        #mentel-card{
+            margin-top: 300px;
+            margin-left: -10px;
+            width: 490px;
+            height: 480px;
+            overflow:scroll;
+            
+        }
+        #mentel-card .img-fluid{
+            display: flex;
+            flex-direction: column; 
+            width: 90%;
+            margin-left: 20px;
+            margin-top: 20px;
+            
+            
+        }
+        #mentel-card .mentel-card-body h5{
+            font-size: 1rem;
+            margin-left: 20px;
+            margin-top: -5px;
+            
+            
+        }
+        #mentel-card .mentel-card-body p {
+            font-size: 0.8rem;
+            margin-left: 10px;
+        }
+    
+        /* BANCA */
+    
+        #banca-card{
+            margin-top: -60px;
+            margin-left: 10px;
+            width: 490px;
+            height: 480px;
+            overflow: scroll;
+            
+        }
+        #banca-card .banca-card-img-top{
+            width: 90%;
+            height: auto;
+            gap: 5px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+                
+            
+        }
+        #banca-card .banca-card-body h5{
+            font-size: 1.2rem;
+            margin-top: 20px;
+    
+            
+        }
+        #banca-card .banca-card-body p{
+            font-size: 1rem;
+            margin-left: 5px;
+        }
+
+}
+@media(min-width:471px) and (max-width:520px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px;
+    }
+    .ag-courses_item{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+        width: 210px;
+        height: 170px; 
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        
+    }
+    .ag-courses_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 5px;
+        
+        
+    }
+    .ag-courses-item_title{
+        margin-top: 15px;
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.7rem;
+       
+        
+        
+    }
+    .ver-mas-btn{
+        font-size: 0rem;
+        display: none;
+
+    }
+    .btn-close{
+        width: 5px;
+        margin-top: 5px;
+    }
+    #skyp-card {
+        width: 350px;
+        height: 480px;
+        margin-left: -15px;
+        margin-top: 50px;
+        overflow:scroll;
+    }
+    #skyp-card h5{
+        font-size: 1.2rem;
+        
+    }
+    #skyp-card p{
+        font-size: 0.75rem;
+        margin-top: -10px;
+    }
+    #skyp-card ol li ul li{
+        font-size: 0.75rem;
+        margin-left: -10px;
+    }
+    #skyp-card img.enlarged {
+        transform: scale(1.2); 
+    }
+
+    /*  AERO */
+
+    #aero-card{
+        margin-top: 150px;
+        margin-left: -10px;
+        width: 350px;
+        height: 480px;
+        overflow:scroll;
+    }
+    #aero-card .aero-card-img-top{
+        width: 100%;
+        height: auto;
+    }
+    #aero-card .aero-card-img-top.enlarged {
+        transform: scale(1.2); 
+        z-index: 2;
+        position: relative; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* MENTEL */
+    #mentel-card{
+        margin-top: 340px;
+        margin-left: -10px;
+        width: 350px;
+        height: 480px;
+        overflow:scroll;
+        
+    }
+    #mentel-card .img-fluid{
+        display: flex;
+        flex-direction: column; 
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 20px;
+        
+        
+    }
+    #mentel-card .mentel-card-body h5{
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-top: -5px;
+        
+        
+    }
+    #mentel-card .mentel-card-body p {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    /* BANCA */
+
+    #banca-card{
+        margin-top: 690px;
+        margin-left: -10px;
+        width: 350px;
+        height: 480px;
+        overflow: scroll;
+        
+    }
+    #banca-card .banca-card-img-top{
+        width: 90%;
+        height: auto;
+        gap: 5px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+         
+        
+    }
+    #banca-card .banca-card-body h5{
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+        
+    }
+    #banca-card .banca-card-body p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+   
+ 
+}
+@media(min-width:430px) and (max-width:471px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px;
+    }
+    .ag-courses_item{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+        width: 200px;
+        height: 190px; 
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        
+    }
+    .ag-courses_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 5px;
+        
+        
+    }
+    .ag-courses-item_title{
+        margin-top: 15px;
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.7rem;
+       
+        
+        
+    }
+    .ver-mas-btn{
+        font-size: 0.8rem;
+        margin-top: -90px;
+        margin-left:90px;
+        
+
+    }
+    .btn-close{
+        width: 5px;
+        margin-top: 5px;
+    }
+         /* SKYP */
+         #skyp-card {
+            width: 420px;
+            height: 480px;
+            margin-left: -15px;
+            margin-top: 50px;
+            overflow:scroll;
+        }
+        #skyp-card h5{
+            font-size: 1.2rem;
+            
+        }
+        #skyp-card p{
+            font-size: 0.75rem;
+            margin-top: -10px;
+        }
+        #skyp-card ol li ul li{
+            font-size: 0.75rem;
+            margin-left: -10px;
+        }
+        #skyp-card img.enlarged {
+            transform: scale(1.2); 
+        }
+    
+        /*  AERO */
+    
+        #aero-card{
+            margin-top: 150px;
+            margin-left: -10px;
+            width: 420px;
+            height: 480px;
+            overflow:scroll;
+        }
+        #aero-card .aero-card-img-top{
+            width: 100%;
+            height: auto;
+        }
+        #aero-card .aero-card-img-top.enlarged {
+            transform: scale(1.2); 
+            z-index: 2;
+            position: relative; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    
+        /* MENTEL */
+        #mentel-card{
+            margin-top: 340px;
+            margin-left: -10px;
+            width: 420px;
+            height: 480px;
+            overflow:scroll;
+            
+        }
+        #mentel-card .img-fluid{
+            display: flex;
+            flex-direction: column; 
+            width: 90%;
+            margin-left: 20px;
+            margin-top: 20px;
+            
+            
+        }
+        #mentel-card .mentel-card-body h5{
+            font-size: 1rem;
+            margin-left: 20px;
+            margin-top: -5px;
+            
+            
+        }
+        #mentel-card .mentel-card-body p {
+            font-size: 0.8rem;
+            margin-left: 10px;
+        }
+    
+        /* BANCA */
+    
+        #banca-card{
+            margin-top: 690px;
+            margin-left: -10px;
+            width: 420px;
+            height: 480px;
+            overflow: scroll;
+            
+        }
+        #banca-card .banca-card-img-top{
+            width: 90%;
+            height: auto;
+            gap: 5px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+                
+            
+        }
+        #banca-card .banca-card-body h5{
+            font-size: 1.2rem;
+            margin-top: 20px;
+    
+            
+        }
+        #banca-card .banca-card-body p{
+            font-size: 1rem;
+            margin-left: 5px;
+        }
+ 
+}
+@media(min-width:360px) and (max-width:430px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px;
+    }
+    .ag-courses_item{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        width: 170px;
+        height: 190px; 
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        
+    }
+    .ag-courses_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 10px;
+        
+        
+    }
+    .ag-courses-item_title{
+        margin-top: 15px;
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.7rem;
+       
+        
+        
+    }
+    .ver-mas-btn{
+        font-size: 0.6rem;
+        margin-top: -90px;
+        margin-left:50px;
+        
+
+    }
+    .btn-close{
+        width: 5px;
+        margin-top: 5px;
+    }
+        /* SKYP */
+    #skyp-card {
+        width: 350px;
+        height: 480px;
+        margin-left: -15px;
+        margin-top: 50px;
+        overflow:scroll;
+    }
+    #skyp-card h5{
+        font-size: 1.2rem;
+        
+    }
+    #skyp-card p{
+        font-size: 0.75rem;
+        margin-top: -10px;
+    }
+    #skyp-card ol li ul li{
+        font-size: 0.75rem;
+        margin-left: -10px;
+    }
+    #skyp-card img.enlarged {
+        transform: scale(1.2); 
+    }
+
+    /*  AERO */
+
+    #aero-card{
+        margin-top: 150px;
+        margin-left: -10px;
+        width: 350px;
+        height: 480px;
+        overflow:scroll;
+    }
+    #aero-card .aero-card-img-top{
+        width: 100%;
+        height: auto;
+    }
+    #aero-card .aero-card-img-top.enlarged {
+        transform: scale(1.2); 
+        z-index: 2;
+        position: relative; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* MENTEL */
+    #mentel-card{
+        margin-top: 340px;
+        margin-left: -10px;
+        width: 350px;
+        height: 480px;
+        overflow:scroll;
+        
+    }
+    #mentel-card .img-fluid{
+        display: flex;
+        flex-direction: column; 
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 20px;
+        
+        
+    }
+    #mentel-card .mentel-card-body h5{
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-top: -5px;
+        
+        
+    }
+    #mentel-card .mentel-card-body p {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    /* BANCA */
+
+    #banca-card{
+        margin-top: 690px;
+        margin-left: -10px;
+        width: 350px;
+        height: 480px;
+        overflow: scroll;
+        
+    }
+    #banca-card .banca-card-img-top{
+        width: 90%;
+        height: auto;
+        gap: 5px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+            
+        
+    }
+    #banca-card .banca-card-body h5{
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+        
+    }
+    #banca-card .banca-card-body p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+ 
+}
+@media (min-width:300px) and (max-width:360px){
+    .back-arrow{
+        margin-top: 10px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .pro{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .ag-format-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 20px;
+    }
+    .ag-courses_item{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        width: 150px;
+        height: 200px; 
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        
+    }
+    .ag-courses_box{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 5px;
+        
+        
+    }
+    .ag-courses-item_title{
+        margin-top: 15px;
+        font-size: 0.9rem;
+        margin-bottom: -10px;
+    }
+    .ag-courses-item_date{
+        font-size: 0.7rem;
+       
+        
+        
+    }
+    .ver-mas-btn{
+        font-size: 0.6rem;
+        margin-top: -90px;
+        margin-left:50px;
+        
+
+    }
+    .btn-close{
+        width: 5px;
+        margin-top: 5px;
+    }
+
+    /* SKYP */
+    #skyp-card {
+        width: 300px;
+        height: 480px;
+        margin-left: -15px;
+        margin-top: 50px;
+        overflow:scroll;
+    }
+    #skyp-card h5{
+        font-size: 1.2rem;
+        
+    }
+    #skyp-card p{
+        font-size: 0.75rem;
+        margin-top: -10px;
+    }
+    #skyp-card ol li ul li{
+        font-size: 0.75rem;
+        margin-left: -10px;
+    }
+    #skyp-card img.enlarged {
+        transform: scale(1.2); 
+    }
+
+    /*  AERO */
+
+    #aero-card{
+        margin-top: 150px;
+        margin-left: -10px;
+        width: 300px;
+        height: 480px;
+        overflow:scroll;
+    }
+    #aero-card .aero-card-img-top{
+        width: 100%;
+        height: auto;
+    }
+    #aero-card .aero-card-img-top.enlarged {
+        transform: scale(1.2); 
+        z-index: 2;
+        position: relative; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* MENTEL */
+    #mentel-card{
+        margin-top: 340px;
+        margin-left: -10px;
+        width: 300px;
+        height: 480px;
+        overflow:scroll;
+        
+    }
+    #mentel-card .img-fluid{
+        display: flex;
+        flex-direction: column; 
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 20px;
+        
+        
+    }
+    #mentel-card .mentel-card-body h5{
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-top: -5px;
+        
+        
+    }
+    #mentel-card .mentel-card-body p {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    /* BANCA */
+
+    #banca-card{
+        margin-top: 720px;
+        margin-left: -10px;
+        width: 300px;
+        height: 480px;
+        overflow: scroll;
+        
+    }
+    #banca-card .banca-card-img-top{
+        width: 90%;
+        height: auto;
+        gap: 5px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+         
+        
+    }
+    #banca-card .banca-card-body h5{
+        font-size: 1.2rem;
+        margin-top: 20px;
+
+        
+    }
+    #banca-card .banca-card-body p{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+ 
+}
+
+

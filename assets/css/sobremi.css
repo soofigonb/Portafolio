@@ -1,0 +1,767 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+#sobremi, #proyectos {
+    min-height: 100vh; 
+    padding: 20px;
+}
+#sobremi {
+    margin-bottom: 20px;
+    flex: 1;
+    max-width: 45%;
+}
+.back-arrow {
+    width: 20px;
+    height: 20px;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    margin-left: 30px;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+     
+}
+
+.card-agrandamientod, .polaroid-container {
+    flex: 1;
+    align-self: center;
+}
+.libros {
+    text-decoration: none; 
+    color: black;
+    cursor: pointer;
+    font-weight: bold; 
+}
+
+.libros:hover {
+    color: #ff69b4; 
+}
+
+.parrafoUno, .parrafoDos, .parrafoTres {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 19px;
+}
+.social-links a {
+    text-decoration: none; 
+    color: inherit; 
+}
+.social-links a.linkedin {
+    color: #333; 
+}
+
+.social-links a.instagram {
+    color: #333;
+}
+  
+.card-agrandamiento {
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 850px;
+    height: 480px;
+    transition: transform 0.3s ease; 
+    margin-top: -50px;
+    margin-left: 100px;
+    
+}
+
+.card-agrandamiento p {
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.polaroid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-top:-300px;
+    margin-left: 200px;
+}
+
+.polaroid {
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    text-align: left;
+    max-width: 300px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.profile-img {
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+    border: 5px solid transparent;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.polaroid h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 10px 0 5px;
+}
+
+.polaroid .location, .polaroid .phone, .polaroid .email {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 14px;
+    margin: 5px 0;
+    align-items: center;
+}
+.card-agrandamiento:hover, .polaroid:hover {
+    transform: scale(1.09); 
+}
+.nombre {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.hola {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+
+.hola p {
+    margin-bottom: 30px;
+}
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-links .linkedin,
+.social-links .instagram {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.info, .social-links, .location {
+    width: 100%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.info p, .location p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chile {
+    margin-right: 87px;
+}
+
+
+
+
+
+@media (min-width:1338px) and (max-width:1400.9px){
+    .back-arrow{
+        margin-top: -60px;
+        margin-left: 5px;
+        width: 12px;
+        height: 12px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        gap: -5px;
+        width: 100%; 
+    }
+    .main-container .card-agrandamiento {
+        width: 630px;
+        height: 380px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-right: 40px;
+        
+    }
+    
+    #sobremi h1{
+        font-size:2.3rem;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    #sobremi p{
+        font-size: 1.2rem;
+
+    }
+    .polaroid-container .polaroid {
+        width: 260px;
+        height: 380px;
+        margin-top: 100px;
+        padding: 10px;
+        margin-left: -60px;
+    }
+    .polaroid img{
+        width: 70%;
+        height: auto;
+        border-radius: 10%;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .nombre{
+        font-size: 1.2rem;
+        margin-bottom: -10px;
+        
+    }
+    .polaroid .email , .polaroid .phone , .polaroid .social-links {
+        font-size: 0.75rem;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .polaroid .email , .polaroid .phone{
+        margin-left: -20px;
+        
+    }
+    .polaroid .email{
+        margin-top: 5px;
+    }
+    .polaroid .chile{
+        margin-left: -3px;
+        font-size: 0.75rem;
+        text-align: left;
+    }
+    .social-links .instagram{
+        margin-bottom: 2px;
+
+    }
+}
+@media (min-width:1024px) and (max-width:1328.9px){
+    .back-arrow{
+        margin-top: -60px;
+        margin-left: 5px;
+        width: 12px;
+        height: 12px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        gap: -5px;
+        width: 100%; 
+    }
+    .main-container .card-agrandamiento {
+        width: 630px;
+        height: 380px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-right: 40px;
+        
+    }
+    
+    #sobremi h1{
+        font-size:2.3rem;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    #sobremi p{
+        font-size: 1.2rem;
+
+    }
+    .polaroid-container .polaroid {
+        width: 260px;
+        height: 380px;
+        margin-top: 100px;
+        padding: 10px;
+        margin-left: -60px;
+    }
+    .polaroid img{
+        width: 70%;
+        height: auto;
+        border-radius: 10%;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .nombre{
+        font-size: 1.2rem;
+        margin-bottom: -10px;
+        
+    }
+    .polaroid .email , .polaroid .phone , .polaroid .social-links {
+        font-size: 0.75rem;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .polaroid .email , .polaroid .phone{
+        margin-left: -20px;
+        
+    }
+    .polaroid .email{
+        margin-top: 5px;
+    }
+    .polaroid .chile{
+        margin-left: -3px;
+        font-size: 0.75rem;
+        text-align: left;
+    }
+    .social-links .instagram{
+        margin-bottom: 2px;
+
+    }
+}
+
+@media (min-width:991px) and (max-width:1024.9px){
+    .back-arrow{
+        margin-top: -60px;
+        margin-left: 5px;
+        width: 12px;
+        height: 12px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        gap: -5px;
+        width: 100%; 
+    }
+    .main-container .card-agrandamiento {
+        width: 500px;
+        height: 360px;
+        padding: 10px;
+        margin-top: 60px;
+        margin-right: 120px;
+        
+    }
+    
+    #sobremi h1{
+        font-size:1.9rem;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    #sobremi p{
+        font-size: 1.1rem;
+
+    }
+    .polaroid-container .polaroid {
+        width: 260px;
+        height: 360px;
+        margin-top: 110px;
+        padding: 10px;
+        margin-left: -150px;
+    }
+    .polaroid img{
+        width: 70%;
+        height: auto;
+        border-radius: 10%;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .nombre{
+        font-size: 1.2rem;
+        margin-bottom: -10px;
+        
+    }
+    .polaroid .email , .polaroid .phone , .polaroid .social-links {
+        font-size: 0.75rem;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .polaroid .email , .polaroid .phone{
+        margin-left: -20px;
+        
+    }
+    .polaroid .email{
+        margin-top: 5px;
+    }
+    .polaroid .chile{
+        margin-left: -3px;
+        font-size: 0.75rem;
+        text-align: left;
+    }
+    .social-links .instagram{
+        margin-bottom: 2px;
+
+    }
+}
+@media (min-width:899px) and (max-width:991.9px){
+    .back-arrow{
+        margin-top: -60px;
+        margin-left: 5px;
+        width: 12px;
+        height: 12px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        gap: -5px;
+        width: 100%; 
+    }
+    .main-container .card-agrandamiento {
+        width: 440px;
+        height: 360px;
+        padding: 10px;
+        margin-top: 30px;
+        margin-right: 120px;
+        
+    }
+    
+    #sobremi h1{
+        font-size:1.7rem;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    #sobremi p{
+        font-size: 1rem;
+
+    }
+    .polaroid-container .polaroid {
+        width: 260px;
+        height: 360px;
+        margin-top: 50px;
+        padding: 10px;
+        margin-left: -180px;
+    }
+    .polaroid img{
+        width: 70%;
+        height: auto;
+        border-radius: 10%;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .nombre{
+        font-size: 1.2rem;
+        margin-bottom: -10px;
+        
+    }
+    .polaroid .email , .polaroid .phone , .polaroid .social-links {
+        font-size: 0.75rem;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .polaroid .email , .polaroid .phone{
+        margin-left: -20px;
+        
+    }
+    .polaroid .email{
+        margin-top: 5px;
+    }
+    .polaroid .chile{
+        margin-left: -3px;
+        font-size: 0.75rem;
+        text-align: left;
+    }
+    .social-links .instagram{
+        margin-bottom: 2px;
+
+    }
+}
+@media (min-width:701px) and (max-width:899.9px){
+    .back-arrow{
+        margin-top: -60px;
+        margin-left: 5px;
+        width: 12px;
+        height: 12px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        gap: -5px;
+        width: 100%; 
+    }
+    .main-container .card-agrandamiento {
+        width: 330px;
+        height: 360px;
+        padding: 10px;
+        margin-top: 60px;
+        margin-right: 150px;
+        
+    }
+    
+    #sobremi h1{
+        font-size:1.59rem;
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+    #sobremi p{
+        font-size: 0.85rem;
+
+    }
+    .polaroid-container .polaroid {
+        width: 230px;
+        height: 360px;
+        margin-top: 110px;
+        padding: 10px;
+        margin-left: -190px;
+    }
+    .polaroid img{
+        width: 80%;
+        height: auto;
+        border-radius: 10%;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .nombre{
+        font-size: 1rem;
+        margin-bottom: -10px;
+        
+    }
+    .polaroid .email , .polaroid .phone , .polaroid .social-links {
+        font-size: 0.7rem;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .polaroid .email , .polaroid .phone{
+        margin-left: -20px;
+        
+    }
+    .polaroid .email{
+        margin-top: 2px;
+    }
+    .polaroid .chile{
+        margin-left: 2px;
+        font-size: 0.7rem;
+        text-align: left;
+    }
+    .social-links .instagram{
+        margin-bottom: 2px;
+
+    }
+}
+@media (min-width:480px) and (max-width:700.9px){
+    .back-arrow{
+        margin-top: -60px;
+        margin-left: 5px;
+        width: 12px;
+        height: 12px;
+    }
+    .main-container ,.card-agrandamiento{
+        width: 390px;
+        height: 180px;
+        margin-right: 220px;
+        padding: 10px;
+        margin-top: -10px;
+    }
+    .hola{
+        font-size:0.9rem;
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+    #sobremi p{
+        font-size: 0.65rem;
+        margin-bottom: -5px;
+    }
+
+    .polaroid-container , .polaroid{
+        width: 200px;
+        height: 250px;
+        margin-top: 250px;
+        margin-left: 30px;
+        padding: 10px;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .polaroid img{
+        width: 50%;
+        border-radius: 50%;
+        margin-bottom: -5px;
+    }
+    .nombre{
+        font-size: 0.8rem;
+        margin-bottom: -10px;
+        
+    }
+    .polaroid .email , .polaroid .phone , .polaroid .social-links {
+        font-size: 0.6rem;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .polaroid .email , .polaroid .phone{
+        margin-left: -20px;
+        
+    }
+    .polaroid .email{
+        margin-top: 2px;
+    }
+    .polaroid .chile{
+        margin-left: 15px;
+        font-size: 0.6rem;
+        text-align: left;
+    }
+    .social-links .instagram{
+        margin-bottom: 2px;
+
+    }
+}
+@media(min-width:360px) and (max-width:480px){
+    .back-arrow{
+        margin-top: -60px;
+        margin-left: 5px;
+        width: 12px;
+        height: 12px;
+    }
+    .main-container ,.card-agrandamiento{
+        width: 300px;
+        height: 180px;
+        margin-right: 170px;
+        padding: 10px;
+        margin-top: -10px;
+    }
+    .hola{
+        font-size:0.8rem;
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+    #sobremi p{
+        font-size: 0.59rem;
+        margin-bottom: -5px;
+    }
+
+    .polaroid-container , .polaroid{
+        width: 200px;
+        height: 240px;
+        margin-top: 240px;
+        margin-left: 20px;
+        padding: 10px;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .polaroid img{
+        width: 40%;
+        border-radius: 50%;
+        margin-bottom: -5px;
+    }
+    .nombre{
+        font-size: 0.8rem;
+        margin-bottom: -10px;
+        
+    }
+    .polaroid .email , .polaroid .phone , .polaroid .social-links {
+        font-size: 0.6rem;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .polaroid .email , .polaroid .phone{
+        margin-left: -20px;
+        
+    }
+    .polaroid .email{
+        margin-top: 2px;
+    }
+    .polaroid .chile{
+        margin-left: 15px;
+        font-size: 0.6rem;
+        text-align: left;
+    }
+    .social-links .instagram{
+        margin-bottom: 2px;
+
+    }
+}
+@media (min-width:300px) and (max-width:360px){
+    .back-arrow{
+        margin-top: -60px;
+        margin-left: 5px;
+        width: 12px;
+        height: 12px;
+    }
+    .main-container ,.card-agrandamiento{
+        width: 250px;
+        height: 200px;
+        margin-right: 150px;
+        padding: 10px;
+        margin-top: -10px;
+    }
+    .hola{
+        font-size:0.8rem;
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+    #sobremi p{
+        font-size: 0.59rem;
+        margin-bottom: -5px;
+    }
+
+    .polaroid-container , .polaroid{
+        width: 200px;
+        height: 220px;
+        margin-top: 240px;
+        margin-left: 20px;
+        padding: 10px;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .polaroid img{
+        width: 40%;
+        border-radius: 50%;
+        margin-bottom: -5px;
+    }
+    .nombre{
+        font-size: 0.8rem;
+        margin-bottom: -10px;
+        
+    }
+    .polaroid .email , .polaroid .phone , .polaroid .social-links {
+        font-size: 0.6rem;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .polaroid .email , .polaroid .phone{
+        margin-left: -20px;
+        
+    }
+    .polaroid .email{
+        margin-top: 2px;
+    }
+    .polaroid .chile{
+        margin-left: 15px;
+        font-size: 0.6rem;
+        text-align: left;
+    }
+    .social-links .instagram{
+        margin-bottom: 2px;
+
+    }
+   
+}

@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.back-arrow {
+    width: 20px;
+    height: 20px;
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: -40px;
+    
+    
+}
+.experiencia-format-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.experiencia-courses_box {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 50px;
+    padding: 30px;
+}
+
+.experiencia-courses_item {
+    
+    height: 250px; 
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 28px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.experiencia-courses_item:hover {
+    transform: scale(1.09); 
+}
+
+.experiencia-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+}
+
+.experiencia-courses-item_link:hover,
+.experiencia-courses-item_link:hover .experiencia-courses-item_date {
+    color: #333;
+}
+
+.experiencia-courses-item_link:hover .experiencia-courses-item_bg {
+    transform: scale(10);
+}
+
+.experiencia-courses-item_title {
+    min-height: 90px;
+    margin: 0 0 30px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    z-index: 1;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.experiencia-courses-item_date-box {
+    font-size: 18px;
+    color: #333;
+    z-index: 1;
+    position: relative;
+}
+
+.experiencia-courses-item_date {
+    font-weight: bold;
+    color: #333;
+    transition: color .5s ease;
+}
+
+.experiencia-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    z-index: 1;
+    position: absolute;
+    top: -60px;
+    right: -75px;
+    border-radius: 50%;
+    transition: all .5s ease;
+    background: linear-gradient(90deg, hsla(311, 74%, 87%, 1) 0%, hsla(275, 19%, 88%, 1) 100%);
+}
+
+.exp {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px; 
+    letter-spacing: 7px;  
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -60px;
+}
+
+.enlarge {
+    transform: scale(1.09);
+    transition: transform 0.3s ease;
+}
+
+h2.pro, h2.exp {
+    transition: color 0.3s ease;
+}
+
+h2.pro:hover, h2.exp:hover {
+    color: #ff69b4;
+}
+
+
+@media (min-width:991px) and (max-width:1024.9px){
+    .back-arrow{
+        margin-top: -70px;
+        margin-left: 10px;
+        width: 12px;
+        height: 12px;
+    }
+    .exp{
+        font-size: 1.8rem;
+        margin-top: 15px;
+        margin-right: 1000px;
+    }
+    .experiencia-format-container{
+        width: 150%;
+        margin-left: 250px;
+    }
+    .experiencia-courses_item {
+        
+        height: 250px;
+    }
+    .experiencia-courses-item_title{
+        font-size: 1.5rem;
+    }
+    .experiencia-courses-item_date-box .experiencia-courses-item_date{
+        font-size: 1rem;
+    }
+}
+@media (min-width:899px) and (max-width:991.9px){
+    .back-arrow{
+        margin-top: -70px;
+        margin-left: 10px;
+        width: 12px;
+        height: 12px;
+    }
+    .exp{
+        font-size: 1.8rem;
+        margin-top: -15px;
+        margin-right: 900px;
+    }
+    .experiencia-format-container{
+        width: 150%;
+        margin-left: 250px;
+    }
+    .experiencia-courses_item {
+        
+        height: 250px;
+    }
+    .experiencia-courses-item_title{
+        font-size: 1.5rem;
+    }
+    .experiencia-courses-item_date-box .experiencia-courses-item_date{
+        font-size: 1rem;
+    }
+}
+@media (min-width:800px) and (max-width:899.9px){
+    .back-arrow{
+        margin-top: -70px;
+        margin-left: 10px;
+        width: 12px;
+        height: 12px;
+    }
+    .exp{
+        font-size: 1.6rem;
+        margin-top: -15px;
+        margin-right: 800px;
+    }
+    .experiencia-format-container{
+        width: 150%;
+        margin-left: 190px;
+    }
+    .experiencia-courses_item {
+        
+        height: 250px;
+    }
+    .experiencia-courses-item_title{
+        font-size: 1.5rem;
+    }
+    .experiencia-courses-item_date-box .experiencia-courses-item_date{
+        font-size: 1rem;
+    }
+}
+@media (min-width:700px) and (max-width:800.9px){
+    .back-arrow{
+        margin-top: -70px;
+        margin-left: 10px;
+        width: 12px;
+        height: 12px;
+    }
+    .exp{
+        font-size: 1.4rem;
+        margin-top: -15px;
+        margin-left: -580px;
+    }
+    .experiencia-format-container{
+        width: 150%;
+        margin-left: 110px;
+    }
+    .experiencia-courses_item {
+        
+        height: 250px;
+    }
+    .experiencia-courses-item_title{
+        font-size: 1.5rem;
+    }
+    .experiencia-courses-item_date-box .experiencia-courses-item_date{
+        font-size: 1rem;
+    }
+}
+@media (min-width:644px) and (max-width:700.9px){
+    .back-arrow{
+        margin-top: -70px;
+        margin-left: 10px;
+        width: 12px;
+        height: 12px;
+    }
+    .exp{
+        font-size: 1.4rem;
+        margin-top: -15px;
+        margin-left: -450px;
+    }
+    .experiencia-format-container{
+        width: 150%;
+        margin-left: 80px;
+    }
+    .experiencia-courses_item {
+        
+        height: 250px;
+    }
+    .experiencia-courses-item_title{
+        font-size: 1.5rem;
+    }
+    .experiencia-courses-item_date-box .experiencia-courses-item_date{
+        font-size: 1rem;
+    }
+}
+@media (min-width:600px) and (max-width:644.9px){
+    .back-arrow{
+        margin-top: -70px;
+        margin-left: 10px;
+        width: 12px;
+        height: 12px;
+    }
+    .exp{
+        font-size: 1.4rem;
+        margin-top: -15px;
+        margin-left: -350px;
+    }
+    .experiencia-format-container{
+        width: 150%;
+        margin-left: 40px;
+    }
+    .experiencia-courses_item {
+        
+        height: 250px;
+    }
+    .experiencia-courses-item_title{
+        font-size: 1.5rem;
+    }
+    .experiencia-courses-item_date-box .experiencia-courses-item_date{
+        font-size: 1rem;
+    }
+}
+@media (min-width:520px) and (max-width:600.9px){
+    .back-arrow{
+        margin-top: -70px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .exp{
+        font-size: 1.4rem;
+        margin-top: -15px;
+        margin-left: -260px;
+    }
+    .experiencia-format-container{
+        width: 150%;
+        margin-left: 15px;
+    }
+    .experiencia-courses_item {
+        
+        height: 250px;
+    }
+    .experiencia-courses-item_title{
+        font-size: 1.5rem;
+    }
+    .experiencia-courses-item_date-box .experiencia-courses-item_date{
+        font-size: 1rem;
+    }
+}
+@media (min-width:471px) and (max-width:520.9px){
+    .back-arrow{
+        margin-top: -70px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .exp{
+        font-size: 1.4rem;
+        margin-top: -15px;
+        margin-left: -230px;
+    }
+    .experiencia-format-container{
+        width: 150%;
+        margin-left: -10px;
+    }
+    .experiencia-courses_item {
+        
+        height: 250px;
+    }
+    .experiencia-courses-item_title{
+        font-size: 1.5rem;
+    }
+    .experiencia-courses-item_date-box .experiencia-courses-item_date{
+        font-size: 1rem;
+    }
+}
+@media (min-width:430px) and (max-width:471.9px){
+    .back-arrow{
+        margin-top: -70px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .exp{
+        font-size: 1.4rem;
+        margin-top: -15px;
+        margin-left: -30px;
+    }
+    .experiencia-format-container{
+        width: 130%;
+        margin-left: -30px;
+    }
+    .experiencia-courses_item {
+        
+        height: 250px;
+    }
+    .experiencia-courses-item_title{
+        font-size: 1.3rem;
+    }
+    .experiencia-courses-item_date-box .experiencia-courses-item_date{
+        font-size: 1rem;
+    }
+}
+@media (min-width:360px) and (max-width:430.9px){
+    .back-arrow{
+        margin-top: -70px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .exp{
+        font-size: 1.3rem;
+        margin-top: -15px;
+    }
+    .experiencia-format-container{
+        width: 130%;
+        margin-left: -40px;
+    }
+    .experiencia-courses_item {
+        
+        height: 250px;
+    }
+    .experiencia-courses-item_title{
+        font-size: 1.3rem;
+    }
+    .experiencia-courses-item_date-box .experiencia-courses-item_date{
+        font-size: 1rem;
+    }
+}
+@media (min-width:300px) and (max-width:360px){
+    .back-arrow{
+        margin-top: -70px;
+        margin-left: -10px;
+        width: 12px;
+        height: 12px;
+    }
+    .exp{
+        font-size: 1rem;
+        margin-top: -15px;
+    }
+    .experiencia-format-container{
+        width: 130%;
+        margin-left: -30px;
+    }
+    .experiencia-courses_item {
+        
+        height: 250px;
+    }
+    .experiencia-courses-item_title{
+        font-size: 0.9rem;
+    }
+    .experiencia-courses-item_date-box .experiencia-courses-item_date{
+        font-size: 0.9rem;
+    }
+}
